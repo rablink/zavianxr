@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>zavianxr</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #f6f6f6;
+      color: #333;
+      line-height: 1.6;
+      background: linear-gradient(to bottom right, #d4eac8, #f6f6f6);
+    }
+    header, section {
+      padding: 2px 20px;
+      text-align: center;
+    }
+   header {
+      background-color: #737a86;
+      color: rgb(255, 255, 255);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin: 30px 0 20px;
+      color: #000000;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 3000px;
+      text-align: left;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .highlight {
+      color: #4e6e5d;
+      font-weight: bold;
+    }
+    footer {
+      background: #737a86;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+     .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    body {
+  background: linear-gradient(rgba(191, 200, 212, 0.8), rgba(193, 204, 201, 0.8)),  
+              url('background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+    .step {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .step img {
+      width: 40px;
+      height: 40px;
+    }
+    .testimonial-img {
+      width: 20%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    @keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+.wa-button {
+  animation: pulse 1.5s infinite;
+}
+
+    .wa-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .wa-button:hover {
+      background-color: #128C7E;
+    }
+    .testimonial-slider {
+  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px;
+}
+.faq-item {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+#countdown {
+  background: #fff3f3;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px 20px;
+  text-align: left;
+  background: #737a86;
+  color: white;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.faq-question:hover {
+  background: #d3bcbc;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  padding: 0 20px;
+  transition: max-height 0.4s ease;
+}
+.faq-answer p {
+  margin: 15px 0px;
+}
+.faq-item.active .faq-answer {
+  max-height: 3000px; /* cukup untuk beberapa paragraf */
+}
+
+.slides img {
+  min-width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.wa-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  animation: pulse 1.5s infinite;
+}
+.wa-button:hover {
+  background-color: #128C7E;
+}
+
+  </style>
+<style>
+  .floating-chat {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 12px 18px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    z-index: 9999;
+    max-width: 250px;
+    animation: fadeInOut 5s ease-in-out;
+  }
+
+  @keyframes fadeInOut {
+    0% {opacity: 0; transform: translateY(20px);}
+    10% {opacity: 1; transform: translateY(0);}
+    90% {opacity: 1;}
+    100% {opacity: 0; transform: translateY(20px);}
+  }
+  .join-section {
+  background-color: #f9f9ff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+ul.checklist {
+  list-style: none;
+  padding: 0;
+}
+ul.checklist li::before {
+  content: "✔️ ";
+  margin-right: 5px;
+}
+.cta-button .btn {
+  background-color: #3ca028;
+  color: rgb(255, 255, 255);
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.image-banner img, .gallery img {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+ .testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+.testimonial-grid img {
+  width: 150%;
+  max-width: 1500000px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+</style>
+
+<div id="chat1" class="floating-chat">💬 “Awalnya ragu, ternyata dibimbing dari nol sampai bisa! -Dinda”</div>
+<div id="chat2" class="floating-chat">💬 “Dapet bahan promosi lengkap tinggal upload doang!” -Rani</div>
+<div id="chat3" class="floating-chat">💬 “Cuma modal HP dan kuota udah bisa bisnis online!” -Adit</div>
+<div id="chat4" class="floating-chat">💬 “Modal kecil, hasil gede. Seriusan ini peluang bagus banget!” -Intan</div>
+<div id="chat5" class="floating-chat">💬 “Dikasih caption, gambar, video. Tinggal upload aja!” -Surya</div>
+<script>
+  const chats = [
+    document.getElementById("chat1"),
+    document.getElementById("chat2"),
+    document.getElementById("chat3"),
+    document.getElementById("chat4"),
+    document.getElementById("chat5")
+  ];
+  let current = 0;
+
+  function showChat() {
+    chats.forEach((chat, index) => {
+      chat.style.display = index === current ? "block" : "none";
+    });
+    current = (current + 1) % chats.length;
+  }
+
+  showChat(); // Tampilkan pertama
+  setInterval(showChat, 3300); // Ganti setiap 6 detik
+</script>
+
+</head>
+<body>
+  <header>
+    
+    <h1>WELCOME TO <br>@zavianxr
+</h1>
+<section class="image-banner">
+    <img src="1.jpg" alt="Banner Utama Smart Study Center" />
+</section>
+<section style="text-align: center; margin: 40px 0;">
+  <h2 style="font-size: 20px;">Total Member Bergabung:</h2>
+  <div id="counter" style="font-size: 36px; font-weight: bold; color: #33ff00;">0</div>
+</section>
+
+<script>
+let count = 0;
+let target = 30190 ; // Jumlah member real/tampilan
+let speed = 2;
+let counter = document.getElementById("counter");
+
+function updateCounter() {
+  if (count < target) {
+    count += Math.floor(Math.random() * 84) + 1;
+    if (count > target) count = target;
+    counter.textContent = count.toLocaleString();
+    setTimeout(updateCounter, speed);
+  }
+}
+updateCounter();
+</script>
+<style>
+.slot-terbatas {
+  position: fixed;
+  top: 25px;
+  left: -60px;
+  background: linear-gradient(45deg, #ff6b6b, #e74c3c);
+  color: white;
+  padding: 10px 40px;
+  font-weight: bold;
+  font-size: 14px;
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border: 2px solid white;
+  z-index: 9999;
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    }, 4000);
+  });
+</script>
+
+<div class="slot-terbatas">
+   *Slot Terbatas!
+</div>
+
+  </header>
+<p style="text-align: center; font-family: 'Poppins', sans-serif; margin-top: 24px; font-size: 16px; color: #333;">
+  Sebelum join, silakan cek juga story dan sorotan di akun 
+  <a href="https://www.instagram.com/zavianxr?igsh=MXM4dTh2Z3JkeXlvbg==" target="_blank"
+     style="display: inline-block; padding: 6px 14px; margin-left: 8px; background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af); color: #fff; font-weight: 500; border-radius: 8px; text-decoration: none; box-shadow: 0 2px 6px rgba(0,0,0,0.15); transition: all 0.3s ease;">
+    IG resmi kami
+  </a>
+</p>
+<div id="chat1" class="floating-chat">💬 “Awalnya ragu, ternyata dibimbing dari nol sampai bisa! -Dinda”</div>
+<div id="chat2" class="floating-chat">💬 “Dapet bahan promosi lengkap tinggal upload doang!” -Rani</div>
+<div id="chat3" class="floating-chat">💬 “Cuma modal HP dan kuota udah bisa bisnis online!” -Adit</div>
+<div id="chat4" class="floating-chat">💬 “Modal kecil, hasil gede. Seriusan ini peluang bagus banget!” -Intan</div>
+<div id="chat5" class="floating-chat">💬 “Dikasih caption, gambar, video. Tinggal upload aja!” -Surya</div>
+  <section>
+    <h2 class="section-title">Join Dan Raih Keuntungan</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Keuntungan Nyata Gabung dibisnis @zavianxr</h3>
+        
+<p>✅Potensi Penghasilan 300rb - 2jt/hari </p>
+✅Kerja lewat HP tanpa keluar rumah
+<p>✅Diajarkan strategi marketing</p>
+✅Tanpa nunjukin muka
+<p>✅Kerja dimanapun dan kapanpun</p>
+✅Tanpa minimum Followers sekalipun followers kamu 0
+<p>✅Full Bimbingan </p>
+✅Bebas konsultasi selamanya
+<p>❌Tidak ada target/tuntutan apapun </p>
+
+<p>❌No Ktp/Atm</p> 
+
+<p>❌Bisnis anti Riba</p> 
+<p>BISNIS HALAL ✅</p>
+SEMUA PENGHASILAN MENJADI MILIK KAMU SEPENUHNYA TANPA BAGI HASIL KEPADA SIAPAPUN💕
+
+    
+       
+    </div>
+  </section>
+
+<section>
+  <h2 class="section-title">Promo Join Hari Ini 🔥</h2>
+  <div style="font-size: 1.5rem; margin-bottom: 10px;">
+    <span style="text-decoration: line-through; color: #000000;">Rp350.000</span>
+    <span class="tebal-bara"> 🔥Rp50.000 </span>
+  </div>
+  <div style="font-size: 1.2rem; color: #07180b; font-weight: bold;">
+    💥 Diskon 75% untuk 10 orang pertama!
+  </div>
+</section>
+
+<style>
+  .tebal-bara {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #8f3434;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-shadow:
+      0 0 4px #ff0000,
+      0 0 8px #ff5500,
+      0 0 12px #ffaa00,
+      0 0 18px #ff6600,
+      0 0 24px #cc2200;
+    animation: baraGlow 0.8s infinite alternate;
+  }
+
+  @keyframes baraGlow {
+    0% {
+      text-shadow:
+        0 0 3px #660000,
+        0 0 6px #990000,
+        0 0 10px #cc3300,
+        0 0 14px #ff5500,
+        0 0 18px #ffaa00;
+    }
+    100% {
+      text-shadow:
+        0 0 6px #ff0000,
+        0 0 12px #ff3300,
+        0 0 18px #ff6600,
+        0 0 24px #ffaa00,
+        0 0 30px #ffcc66;
+    }
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+<section>
+  <h2 class="section-title">🔥 Promo Spesial Berakhir Dalam:</h2>
+  <div id="countdown" style="font-size: 2rem; font-weight: bold; color: #e63946; margin-top: 10px;"></div>
+  <p style="margin-top: 10px; color: #000000;">Jangan sampai kelewatan! Harga akan kembali normal ke <del>Rp350.000</del></p>
+</section>
+
+ 
+<section>
+  <h2 class="section-title">️Jika udah join kamu dapat 3 Bisnis utama :</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <button class="faq-question">1. Agen Bisnis </button>
+      <div class="faq-answer">
+        <p>Jadi kerjanya kalian cuma MENGAJAK orang lain join ke bisnis ini (mengundang orang untuk gabuung ke grup bisnis kita Di mana setiap nanti ada yang join bayarnya ke kamu.</p>
+
+CONTOH:
+
+<p>Kamu kasih harga join per orangnya 35.000 Nah jika ada satu orang join ke kamu maka dia harus bayar 35.000 ke kamu
+
+</p>
+<p>1 org bergabung X 35.000 = 35RB</p>
+2 org gabung X 35.000 = 70RB
+<p>3 org gabung X 35.000 = 105RB Dst...</p>
+
+<p>Simple kan? Cuan terus tanpa bagi  hasil🤑</p>
+
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">2. Online Shop</button>
+      <div class="faq-answer">
+        <p>Cara buka olshop pertama kamu tentukan MAU JADI seller STOK atau jadi seller DROPSHIP
+</p>
+<p>seller DROPSHIP adalah kamu jualan dengan sistem dropship yaitu dimana BARANG yang di order oleh customer/pelanggan kamu itu langsung di kirim dari supplier ke alamat rumah customer kamu.
+
+</p>
+<p>DROPSIP lebih simple krna gak modal untuk stok barang.
+
+Ga ribet Kirim barang atau Peking barang karena yang Peking dan kirim itu langsung supliernya.
+</p>
+So kita hanya menjual nya doang simple kan?
+
+
+<p>Suplier nya udah ada kontaknya di grup.</p>
+Jadi kamu nggak usah cari lagi karena udah ada Channel data suplier di grup.
+
+<p>Kalau mau pakai dua sistem bisa? Sistem stok barang dan Dropship? Boleh kok
+</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">3. BIsnis Agen Kuota & Pulsa
+AGEN</button>
+      <div class="faq-answer">
+        <p> Apa itu agen kuota? Agen kuota ya sama aja agen pulsa, berarti kalian bisa jual pulsa lewat aplikasi.
+</p>
+    Nggak pulsa aja tapi semua fitur yang ada di aplikasi itu bisa dijual!! Inti agen kuota berarti jualan pulsa, Kuota, token PLN, top up game dan lain lain kayak jadi konter gitu.Nah untuk agen kuota kamu harus KELUAR MODAL LAGI untuk beli SALDO!!
+
+
+    <p> Bonus reseller TOPUP GAME!!
+(freefire, mobile legend, dsb)
+</p>
+    </div>
+  </div>
+</section>
+<section>
+  <h2 class="section-title">️️️ Bisnis Tambahan
+<p><small>(bisa untung 1juta pertama!)</p></small>
+
+</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <button class="faq-question">4. Bisnis agen followers</button>
+      <div class="faq-answer">
+        <p>Disini km bisa jualan Followers all sosmed seperti Like/komen/folls di instagram/tiktok dll.
+
+keuntungan Full 100% ke km & sudah termasuk pendaftaran gratis dari zavian🤑
+</p>
+Contoh:
+<p>Bisa tambah Folls instagram</p>
+Bisa tambah Folls tiktok
+<p>Subscribe Youtube DLL
+</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">5. Affiliate Tiktok & Shopee</button>
+      <div class="faq-answer">
+        <p>Disini km akan diajarkan tips trik & step by step menjadi Affiliator krn saat ini bisnis affiliate sangat menguntungkan sampai bisa get 2-3jt/hari dri komisi tiktok💸
+</p>
+Zaman sekarang Affiliate masih sangat menguntungkan bagi tim rebahan🤩
+<p>Video konten dan referensi sudah disiapkan!!
+</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">6. App Premium️️</button>
+      <div class="faq-answer">
+        <p>disini km diajarkan gimana menjual produk digital(tanpa barang) seperti Spotify premium, youtube prem, netflix dll. keuntungan full 100% ke km. sehari bisa get 500-1jt krn bisnis ini life time✨</p>
+      Ada grup khusus✅
+<p>keuntungan full 100% ke km. sehari bisa get 500-1jt krn bisnis ini life time
+</p>
+      </div>
+    </div>
+    
+
+    <div class="faq-item">
+      <button class="faq-question">️️7. Creator Capcut</button>
+      <div class="faq-answer">
+    <p>disini km diajarkan cara menjadi creator capcut & punya penghasilan Dollar! bagi km yg suka ngedit” video atau minat walaupun masih pemula bisa bgt gabung & bercuan disini🤑 </p>
+    bagi km yg suka ngedit" video atau minat walaupun masih pemula bisa bgt gabung & bercuan disini
+<p>Ada Grupnya✅</p>
+  
+  </div>
+    </div>
+
+    </div>
+  </div>
+</section> 
+
+
+  <section>
+  <h2 class="section-title">Testimoni</h2>
+  <div class="testimonial-slider">
+    <div class="slides">
+      <img src="testi1.jpg" alt="Testimoni 1">
+      <img src="testi2.jpg" alt="Testimoni 2">
+      <img src="testi3.jpg" alt="Testimoni 3">
+      <img src="testi4.jpg" alt="Testimoni 4">
+      <img src="testi5.jpg" alt="Testimoni 5">
+      <img src="testi6.jpg" alt="Testimoni 6">
+      <img src="testi7.jpg" alt="Testimoni 7">
+      <img src="testi8.jpg" alt="Testimoni 8">
+    </div>
+  </div>
+</section>
+<section class="image-banner">
+    <img src="t1.PNG" alt="Banner Utama Smart Study Center" />
+    <img src="t2.PNG" alt="Banner Utama Smart Study Center" />
+    <img src="t3.PNG" alt="Banner Utama Smart Study Center" />
+    <img src="t4.PNG" alt="Banner Utama Smart Study Center" />
+</section>
+<section>
+<div class="grid">
+      <h2 class="section-title"> CARA JOIN✅</h2>
+      <div class="card">
+        
+<p>CARA JOIN 👇🏻👇🏻
+</p>
+untuk join bisnis ini silahkan segera melakukan pembayaran/biaya registrasi senilai
+
+<p>‎</p>
+<p>✅ Rp50.000 (PROMO BERLAKU KHUSUS YG TRANSFER HARI INI)
+</p>
+❌ Rp300.000 (NORMAL)
+Metode pembayaran pilih salah satu saja 
+<p>‎</p>
+<p>💠BANK :BCA
+</p>➡ 8275656671 An Wahyudi
+
+<p>💠BANK :BRI
+</p>   ➡ 2131 0100 8661 500 An Wahyudi
+
+<p>💠NO SHOPEEPAY:
+</p>➡0895325837785 an vianz
+
+<p>💠NO DANA:
+</p>➡085822823165 tidak ada namanya
+
+<p>QRIS : ada di katalog wa kami
+</p>
+<p>‎</p>
+ <strong>DIUTAMAKAN TF ke BANK,SHOPEEPAY & QRIS</strong> 
+
+<p>Note: untuk metode dana/shopeepay bisa bayar melalui aplikasi dana/shopee atau bisa lgsg top up melalui Alfamart& indomaret
+
+</p><p>‎</p>
+<p> ‼ PROMO TERBATAS SISA DIKIT LAGI 
+PENJELASAN LENGKAP AKAN DIJELASKAN SETELAH JOIN 😇
+</p>REAL NO TIPU" ‼
+
+<p>✔pembayaran join hanya 1x seumur hidup</p> 
+✔ batas melakukan pembayaran 1x24jam
+<p></p>
+✔ setelah melakukan pembayaran sertakan buktinya berupa struk/screenshot/hp konter
+
+
+ PROMO 65rb HANYA BERLAKU BUAT YG TRANSFER HARI INI:)
+<p>✔ kalau sudah pembayaran akan diarahkan untuk isi data & masuk class bimbingan khusus</p>
+ 
+Ditunggu kabar baiknya ✨Semoga bisa sukses bareng 🏆
+
+</div>
+  </section>
+  
+
+  
+</a>
+    </div>
+  </section>
+<section style="text-align: center; padding: 40px 20px;">
+  <h2 class="section-title">💡 Siap Ubah Hidupmu?</h2>
+  <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 20px;">
+    Kesempatan tidak datang dua kali. Sekarang waktu terbaik untuk memulai perjalananmu menuju penghasilan tambahan dan kebebasan finansial. Jangan tunda!
+  </p>
+  <a href="https://wa.link/rtcgh9" target="_blank" class="wa-button" style="font-size: 1.1rem;">
+    💬 Fix Gabung!
+  </a>
+</section>
+<section>
+  <h2 class="section-title">Cek Surat Legalitas</h2>
+  <p>Untuk memastikan legalitas usaha dan surat resmi kami, silakan cek melalui link berikut:</p>
+  <div style="margin-top: 20px;">
+    <a href="https://www.canva.com/design/DAGq3s0Ohkw/gvO50gLr2BqL0fnRCIWSqw/edit?utm_content=DAGq3s0Ohkw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" style="display: inline-block; margin: 10px; background-color: #737a86; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">SURAT LEGALITAS</a>
+  </div>
+</section>
+<section>
+   <h2 class="section-title">WAJIB DIPERHATIKAN !</h2>
+    <div class="card"> 
+       
+      <p>❌Bukan judi online.
+</p>
+<p>❌Bukan money game/MLM.</p>
+<p>❌Bukan bisnis abal-abal.
+</p>   
+<p>❌Tanpa target penjualan.
+</p>
+<p>❌Tanpa KTP.
+</p>
+<p>❌Tanpa bagi hasil.</p>
+<p>❌Tanpa tuntutan waktu.
+</p>❌Tanpa install aplikasi.
+
+<p>❌Tanpa install aplikasi.
+
+</p>
+<p></p>
+</div>
+  </section>
+</script>
+<section>
+  <h2 class="section-title">FAQ - Pertanyaan yang Sering Diajukan</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <button class="faq-question">Apa bisnis ini aman dan legal?</button>
+      <div class="faq-answer">
+        <p>Ya, bisnis ini memiliki legalitas yang bisa kamu cek langsung melalui surat resmi kami.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Berapa biaya untuk join?</button>
+      <div class="faq-answer">
+        <p>Harga normal 250K, tapi saat ini sedang promo hanya <strong>65K saja</strong>! Hemat <strong>75%</strong>!</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Apakah ada target penjualan?</button>
+      <div class="faq-answer">
+        <p>Tidak. Tidak ada target, semua dijalankan dengan fleksibel tanpa tekanan.</p>
+      </div>
+    </div>
+    
+
+    <div class="faq-item">
+      <button class="faq-question">Apakah ini termasuk MLM atau money game?</button>
+      <div class="faq-answer">
+        <p>Tidak. Ini bukan MLM, money game, ataupun judi. Bisnis ini 100% halal dan berbasis produk/jasa nyata.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Bagaimana jika saya pemula?</button>
+      <div class="faq-answer">
+        <p>Tenang, kamu akan mendapatkan <strong>full bimbingan</strong> sampai bisa! Mulai dari nol pun bisa sukses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="join-section">
+  <h2 class="section-title">🚀 Siap Gabung dan Mulai Bisnis Sekarang?</h2>
+  <p><strong>SESUDAH MEMBACA PENJELASAN BISNIS NYA, KAKAK SIAP JOIN BISNIS & MENYELESAIKAN BIAYA ADMINISTRASI HANYA (1x seumur hidup)?</strong></p>
+  
+  <p>✅ Setelah pembayaran biaya pendaftaran/registrasi member baru, kakak akan langsung diarahkan ke:</p>
+  <ul class="checklist">
+    <li>Grup fasilitas bisnis lengkap</li>
+    <li>Class bimbingan bisnis bersama pembisnis pemula lainnya</li>
+    <li>Full bimbingan & pendampingan sampai paham</li>
+  </ul>
+  
+  <p><strong>JIKA BERMINAT, CHAT ADMIN SEKARANG DENGAN KETIK:</strong></p>
+  <div class="cta-button">
+    <a href="https://wa.link/rtcgh9" class="btn">📩 FIX JOIN</a>
+  </div>
+</section>
+
+
+  <footer>
+    <p>Payment info & lainnya langsung hubungi admin ke WhatsApp </p>
+    
+
+  </footer>
+  <script>
+  let currentIndex = 0;
+  const slides = document.querySelector('.slides');
+  const totalSlides = slides.children.length;
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+     slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }, 1100); // ganti gambar setiap 3 detik
+</script>
+
+<script>
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    item.querySelector('.faq-question').addEventListener('click', () => {
+      item.classList.toggle('active');
+      faqItems.forEach(other => {
+        if (other !== item) {
+          other.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
+<script>
+  const targetDate = new Date();
+  targetDate.setDate(targetDate.getDate() + 1); // Atur promo berakhir 2 hari dari sekarang
+
+  const countdown = document.getElementById("countdown");
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      countdown.textContent = "Promo telah berakhir!";
+      countdown.style.color = "#999";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hrs = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins = Math.floor((diff / (1000 * 60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+
+    countdown.textContent = `${days} hari ${hrs} jam ${mins} menit ${secs} detik`;
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+
+</body>
+</html>
